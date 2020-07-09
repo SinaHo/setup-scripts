@@ -23,7 +23,7 @@ apt install -y php-cli
 mkdir /var/LAMP.bk.d
 mkdir /var/temp.mautic
 
-mv -d /var/www/html/ /var/LAMP.bk.d/
+mv -r /var/www/html/ /var/LAMP.bk.d/
 mkdir /var/www/html
 curl -L -o /var/temp.mautic/mautic.zip https://github.com/mautic/mautic/archive/master.zip
 unzip /var/temp.mautic/mautic.zip -d /var/www/html/
