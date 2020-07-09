@@ -16,7 +16,7 @@ ufw allow in "Apache Full"
 apt install -y mysql-server
 apt install -y php libapache2-mod-php php-mysql
 
-apt insatll -y curl unzip
+apt install -y curl unzip
 
 systemctl restart apache2
 apt install -y php-cli
