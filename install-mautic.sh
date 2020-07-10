@@ -31,7 +31,7 @@ mv /var/www/html/mautic-master/* /var/www/html/
 rm -rfd /var/www/html/mautic-master/
 rm /var/temp.mautic/mautic.zip
 chown -R www-data:www-data /var/www/html/
-chmod -r 777 /var/www/html/
+chmod -R 777 /var/www/html/
 apt install -y composer
 cd /var/www/html
 apt install -y  php-curl  php-xml  php-mbstring php-zip php-bcmath
