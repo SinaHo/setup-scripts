@@ -9,17 +9,18 @@
 
 ######################################
 
+add-apt-repository ppa:ondrej/php
 apt update
 apt install -y apache2 unzip
 ufw allow in "Apache Full"
 
 apt install -y mysql-server
-apt install -y php libapache2-mod-php php-mysql
+apt install -y php libapache2-mod-php7.2 php7.2-mysql
 
 apt install -y curl unzip
 
 systemctl restart apache2
-apt install -y php-cli
+apt install -y php7.2-cli
 mkdir /var/LAMP.bk.d
 mkdir /var/temp.mautic
 
@@ -34,7 +35,7 @@ chown -R www-data:www-data /var/www/html/
 chmod -R 777 /var/www/html/
 apt install -y composer
 cd /var/www/html
-apt install -y  php-curl  php-xml  php-mbstring php-zip php-bcmath
+apt install -y  php7.2-curl  php7.2-xml  php7.2-mbstring php7.2-zip php7.2-bcmath
 composer install 
 chown -R www-data /var/www/html/
 systemctl restart apache2
