@@ -30,7 +30,7 @@ unzip /var/temp.mautic/mautic.zip -d /var/www/html/
 mv /var/www/html/mautic-master/* /var/www/html/
 rm -rfd /var/www/html/mautic-master/
 rm /var/temp.mautic/mautic.zip
-apt install composer
+apt install -y composer
 cd /var/www/html
 apt install -y  php-curl  php-xml  php-mbstring php-zip php-bcmath
 composer install 
